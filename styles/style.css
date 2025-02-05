@@ -22,10 +22,6 @@
   display: grid;
   grid-template-columns: var(--grid-columns);
   gap: var(--header-gap);
-  background-image: var(--page-img);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
   padding: var(--header-padding-block);
   padding-inline: var(--padding-inline);

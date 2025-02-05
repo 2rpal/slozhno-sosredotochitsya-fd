@@ -9,18 +9,34 @@
   --text-color: rgba(53, 52, 48, 1);
   --section-text-color: rgba(53, 52, 48, 1);
   --big-title-color: rgba(255, 194, 230, 1);
-  --decoration-color: var(--section-text-color)
-}
-
-.theme-light .page {
+  --decoration-color: var(--section-text-color);
   --page-img: url('/images/cover-image-light.png');
-}
-
-.theme-light .header {
   --dec-bulb-block: none;
-  --page-img: url('/images/cover-image-light.png');
 }
 
 .theme-light .header__theme-menu-item:hover {
   border: 1px solid rgba(50, 49, 45, 0.4);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: rgba(255, 141, 203, 1);
+    --text-color: rgba(53, 52, 48, 1);
+    --section-text-color: rgba(53, 52, 48, 1);
+    --big-title-color: rgba(255, 194, 230, 1);
+    --decoration-color: var(--section-text-color);
+  }
+
+  .theme-light .page {
+    --page-img: url('/images/cover-image-light.png');
+  }
+  
+  .theme-light .header {
+    --dec-bulb-block: none;
+    --page-img: url('/images/cover-image-light.png');
+  }
+  
+  .theme-light .header__theme-menu-item:hover {
+    border: 1px solid rgba(50, 49, 45, 0.4);
+  }
 }
