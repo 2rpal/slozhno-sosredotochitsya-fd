@@ -9,7 +9,7 @@
   --text-color: rgba(0, 0, 40, 1);
   --section-text-color: rgba(241, 178, 206, 1);
   --big-title-color: rgba(219, 0, 255, 1);
-  --decoration-color: var(--accent-color)
+  --decoration-color: var(--accent-color);
 }
 
 .theme-dark .page {
