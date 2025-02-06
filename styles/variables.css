@@ -5,7 +5,7 @@
 :root {
   --page-size: 375px;
   --page-gap: 40px;
-  --page-bg-image: url('/images/cover-image-dark.png');
+  --page-bg-image: url('./images/cover-image-dark.png');
   --grid-columns: 1fr;
   --grid-rows: auto;
   --header-padding: 10px;

@@ -18,6 +18,7 @@
 .header {
   inline-size: 100%;
   block-size: 100vh;
+  min-block-size: 668px;
   position: relative;
   display: grid;
   grid-template-columns: var(--grid-columns);
@@ -182,7 +183,7 @@
   gap: 20px;
 }
 
-.section__content-container h5 {
+.section__content-container h4 {
   font-weight: 400;
 }
 
@@ -228,7 +229,8 @@
 
 .footer {
   position: relative;
-  block-size: var(--footer-block-size);
+  block-size: 100vh;
+  min-block-size: var(--footer-block-size);
   inline-size: calc(100% - var(--header-padding) / 4);
 }
 
