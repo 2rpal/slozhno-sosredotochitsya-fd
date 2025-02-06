@@ -5,18 +5,12 @@
 */
 
 :root.theme-dark {
-  --accent-color: rgb(255, 0, 112);
-  --text-color: rgba(0, 0, 40, 1);
-  --section-text-color: rgba(241, 178, 206, 1);
-  --big-title-color: rgba(219, 0, 255, 1);
-  --decoration-color: var(--accent-color);
-}
-
-.theme-dark .page {
-  --page-img: url('/images/cover-image-dark.png');
-}
-
-.theme-dark .header {
-  --page-img: url('/images/cover-image-dark.png');
-  --theme-menu-block: block;
+  --accent-color: rgba(255, 0, 112, 1);
+  --decor-color: var(--accent-color);
+  --button-hover-color: rgba(255, 0, 112, 0.4);
+  --page-bg-image: url('/images/cover-image-dark.png');
+  --page-bg-color: rgba(0, 0, 40, 1);
+  --main-text-color: rgba(241, 178, 206, 1);
+  --rec-bulb-display: flex;
+  --decor-text-color: rgba(219, 0, 255, 1);
 }
