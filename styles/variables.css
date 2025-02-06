@@ -42,7 +42,7 @@
     --header-padding: 20px;
     --header-gap: 434px 0;
     --theme-menu-padding: 192px;
-    --header-decor-text-left: 0; 
+    --header-decor-text-left: 0;
     --header-title-decor-padding: 183px;
     --grid-columns: 1fr 1fr;
     --decor-text-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -78,7 +78,7 @@
     grid-column: 1/2;
   }
 
-  .section-distraction-causes .section__content{
+  .section-distraction-causes .section__content {
     grid-column: 1/4;
   }
 
@@ -136,7 +136,7 @@
   .footer {
     --header-padding: 20px;
     --footer-block-size: 1024px;
-    --decor-text-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
+    --decor-text-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
 }

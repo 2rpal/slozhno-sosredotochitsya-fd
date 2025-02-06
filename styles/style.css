@@ -10,7 +10,6 @@
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 18px;
   line-height: 23.4px;
@@ -18,6 +17,7 @@
 
 .header {
   inline-size: 100%;
+  block-size: 100vh;
   position: relative;
   display: grid;
   grid-template-columns: var(--grid-columns);
@@ -149,7 +149,7 @@
   color: rgba(0, 0, 40, 1);
 }
 
-.header .title-decor {  
+.header .title-decor {
   margin-bottom: calc(var(--header-title-decor-padding) - var(--header-padding));
 }
 
@@ -160,7 +160,7 @@
   padding-inline: var(--main-inline-padding);
 }
 
-.section{
+.section {
   display: grid;
   gap: 20px;
   grid-template-columns: var(--grid-columns);
