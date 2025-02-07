@@ -45,8 +45,7 @@
     --decor-text-height: 99px;
     --main-gap: 80px;
     --section-columns: repeat(3, 1fr);
-    --header-height: 1024px;
-    
+    --header-height: 1024px;   
   }
 
   .header .decor-text-container {

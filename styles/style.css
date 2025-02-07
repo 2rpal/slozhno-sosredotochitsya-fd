@@ -1,23 +1,24 @@
 .page {
-  inline-size: var(--page-size);
+  max-inline-size: var(--page-size);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: var(--page-gap);
-  background-attachment: fixed;
-  background-color: var(--page-bg-color);
   background-image: var(--page-bg-image);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: var(--page-bg-color);
+  background-attachment: fixed;
   background-position: center;
+  background-size: cover;
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 18px;
-  line-height: 23.4px;
 }
 
 .header {
   padding: var(--header-padding);
   inline-size: 100%;
-  block-size: var(--header-height);
+  block-size: 100vh;
+  min-block-size: 668px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--header-gap);
@@ -64,6 +65,7 @@
 .rec-bulb::before {
   content: 'REC';
   color: var(--decor-color);
+  line-height: 25px;
 }
 
 .rec-bulb::after {
