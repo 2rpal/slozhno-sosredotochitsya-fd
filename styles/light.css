@@ -6,7 +6,7 @@
 
 :root.theme-light {
   --rec-bulb-display: none;
-  --page-bg-image: url('/images/cover-image-light.png');
+  --page-bg-image: url('../images/cover-image-light.png');
   --accent-color: rgba(255, 141, 203, 1);
   --decor-color: rgba(53, 52, 48, 1);
   --decor-text-color: rgba(255, 194, 230, 1);
@@ -18,9 +18,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --rec-bulb-display: none;
-    --page-bg-image: url('/images/cover-image-light.png');
-    --rec-bulb-display: none;
-    --page-bg-image: url('/images/cover-image-light.png');
+    --page-bg-image: url('../images/cover-image-light.png');
     --accent-color: rgba(255, 141, 203, 1);
     --decor-color: rgba(53, 52, 48, 1);
     --decor-text-color: rgba(255, 194, 230, 1);

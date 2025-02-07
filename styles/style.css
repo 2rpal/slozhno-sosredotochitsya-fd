@@ -9,7 +9,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  overflow-x: hidden;
   font-family: 'IBM Plex mono', sans-serif;
   font-size: 18px;
   line-height: 23.4px;
@@ -18,8 +17,7 @@
 .header {
   padding: var(--header-padding);
   inline-size: 100%;
-  block-size: 100vh;
-  min-block-size: var(--header-height);
+  block-size: var(--header-height);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--header-gap);
@@ -120,29 +118,29 @@
   outline: none;
 }
 
-.decor-text-container { 
-  position: absolute; 
-  top: 0; 
-  left: var(--header-padding); 
-  block-size: 100%; 
-  inline-size: 100%; 
-  display: flex; 
-  justify-content: start; 
-  align-items: center; 
-  z-index: -1; 
-} 
- 
-.decor-text { 
-  font-size: var(--decor-text-size); 
-  line-height: var(--decor-text-height); 
-  letter-spacing: -2px; 
-  color: var(--decor-text-color); 
-  text-shadow: 4px 4px 0 var(--accent-color); 
+.decor-text-container {
+  position: absolute;
+  top: 0;
+  left: var(--header-padding);
+  block-size: 100%;
+  inline-size: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  z-index: -1;
+}
+
+.decor-text {
+  font-size: var(--decor-text-size);
+  line-height: var(--decor-text-height);
+  letter-spacing: -2px;
+  color: var(--decor-text-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .header .title-decor {
   grid-column: var(--header-title-column);
-  margin-bottom: var(--header-title-margin);
+  margin-bottom: calc(var(--header-title-margin) - var(--header-padding));
 
 }
 
@@ -211,15 +209,14 @@
 }
 
 .footer {
-  position: relative; 
-  block-size: 100vh; 
-  min-block-size: var(--header-height); 
-  inline-size: calc(100% - var(--header-padding) / 4); 
+  position: relative;
+  min-block-size: var(--header-height);
+  inline-size: calc(100% - var(--header-padding) / 4);
 } 
  
 .footer .decor-text-container {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  margin-left: -10px; 
-} 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc(-1 * var(--header-padding));
+}
