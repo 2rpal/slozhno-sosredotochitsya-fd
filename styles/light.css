@@ -5,25 +5,25 @@
 */
 
 :root.theme-light {
-  --rec-bulb-display: none;
-  --page-bg-image: url('../images/cover-image-light.png');
   --accent-color: rgba(255, 141, 203, 1);
   --decor-color: rgba(53, 52, 48, 1);
+  --button-hover-color: rgba(50, 49, 45, 0.4);
+  --main-text-color: rgba(53, 52, 48, 1);
+  --rec-bulb-display: none;
+  --page-bg-image: url('/images/cover-image-light.png');
+  --page-bg-color: rgba(255, 241, 247, 1);
   --decor-text-color: rgba(255, 194, 230, 1);
-  --title-decor-color: var(--decor-color);
-  --content-text-color: var(--decor-color);
-  --decor-hover-color: rgba(50, 49, 45, 0.4);
-}
-
+} 
+ 
 @media (prefers-color-scheme: light) {
   :root {
-    --rec-bulb-display: none;
-    --page-bg-image: url('../images/cover-image-light.png');
     --accent-color: rgba(255, 141, 203, 1);
     --decor-color: rgba(53, 52, 48, 1);
+    --button-hover-color: rgba(50, 49, 45, 0.4);
+    --main-text-color: rgba(53, 52, 48, 1);
+    --rec-bulb-display: none;
+    --page-bg-image: url('/images/cover-image-light.png');
+    --page-bg-color: rgba(255, 241, 247, 1);
     --decor-text-color: rgba(255, 194, 230, 1);
-    --title-decor-color: var(--decor-color);
-    --content-text-color: var(--decor-color);
-    --decor-hover-color: rgba(50, 49, 45, 0.4);
   }
 }
