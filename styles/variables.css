@@ -5,51 +5,45 @@
 :root {
   --page-size: 375px;
   --page-gap: 40px;
-  --page-bg-image: url('../images/cover-image-dark.png');
-  --grid-columns: 1fr;
-  --grid-rows: auto;
-  --header-padding: 10px;
-  --header-height: 668px;
-  --theme-menu-direc: column;
-  --theme-menu-margin: 65px 0 312px;
-  --theme-menu-self: end;
-  --header-title-column: 1/3;
-  --header-title-margin: 66px;
+  --page-bg-image: url('./images/cover-image-dark.png');
+  --paddings: 10px;
+  --min-block-size: 668px;
+  --theme-menu-margin: 75px;
+  --theme-justify: end;
+  --theme-menu-dir: column;
+  --header-title-decor-margin: 66px;
+  --head-title-columns: 1/3;
   --decor-text-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --decor-text-height: 96px;
-  --rec-bulb-display: flex;
-  --title-decor-height: 117px;
-  --theme-menu-padding: 75px;
   --main-gap: 50px;
   --section-columns: 1fr;
+  
   /* colors */
   --page-bg-color: rgba(0, 0, 40, 1);
   --accent-color: rgba(255, 0, 112, 1);
   --decor-color: var(--accent-color);
+  --button-hover-color: rgba(255, 0, 112, 0.4);
   --decor-text-color: rgba(219, 0, 255, 1);
-  --title-decor-color: rgba(0, 0, 40, 1);
-  --content-text-color: rgba(241, 178, 206, 1);
-  --decor-hover-color: rgba(255, 0, 112, 0.4);
+  --main-text-color: rgba(241, 178, 206, 1);
 }
 
 @media (width >= 768px) {
   .page {
     --page-size: 768px;
     --page-gap: 60px;
-    --header-padding: 20px;
-    --header-min-height: 1024px;
-    --theme-menu-margin: 172px 0 434px;
-    --header-title-column: 2/3;
-    --header-title-margin: 183px;
+    --paddings: 20px;
+    --min-block-size: 1024px;
+    --theme-menu-margin: 192px;
+    --header-title-decor-margin: 183px;
+    --head-title-columns: 2;
     --decor-text-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --decor-text-height: 99px;
     --main-gap: 80px;
-    --section-columns: repeat(3, 1fr);
-    --header-height: 1024px;   
+    --section-columns: repeat(3, 1fr)
   }
 
-  .header .decor-text-container {
-    --header-padding: 0;
+  .decor-text-container {
+    --paddings: 0;
   }
 
   .focus-challenge .section__content {
@@ -80,8 +74,7 @@
   }
 
   .tape {
-    grid-column: 1/2;
-    grid-row: 2 span;
+    grid-row: 3/5;
   }
 
   .street {
@@ -92,17 +85,16 @@
 @media (width >= 1024px) {
   .page {
     --page-size: 1024px;
-    --header-min-height: 768px;
-    --theme-menu-margin: 0 0 517px;
-    --theme-menu-direc: row;
-    --theme-menu-self: center;
-    --title-decor-height: 71px;
-    --header-height: 768px;
+    --min-block-size: 768px;
+    --theme-menu-margin: 0;
+    --theme-justify: center;
+    --theme-menu-dir: row;
+    --header-title-decor-margin: 134px;
     --decor-text-height: 130px;
   }
 
-  .section__content-container,
-  .focus-challenge .section__content {
+  .focus-challenge .section__content,
+  .section__content-container {
     margin-left: 0;
   }
 
