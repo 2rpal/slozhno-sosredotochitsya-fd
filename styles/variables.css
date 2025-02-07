@@ -39,7 +39,7 @@
     --decor-text-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --decor-text-height: 99px;
     --main-gap: 80px;
-    --section-columns: repeat(3, 1fr)
+    --section-columns: repeat(3, 1fr);
   }
 
   .decor-text-container {
