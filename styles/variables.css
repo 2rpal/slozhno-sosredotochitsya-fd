@@ -1,68 +1,55 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
 :root {
   --page-size: 375px;
   --page-gap: 40px;
-  --page-bg-image: url("./images/cover-image-dark.png");
+  --page-bg-image: url('../images/cover-image-dark.png');
   --grid-columns: 1fr;
   --grid-rows: auto;
   --header-padding: 10px;
-  --header-gap: 312px;
-  --rec-bulb-display: flex;
-  --theme-menu-padding: 75px;
-  --theme-menu-dir: column;
-  --theme-justify: end;
-  --header-decor-text-left: 10px;
+  --header-height: 668px;
+  --theme-menu-direc: column;
+  --theme-menu-margin: 65px 0 312px;
+  --theme-menu-self: end;
+  --header-title-column: 1/3;
+  --header-title-margin: 66px;
   --decor-text-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --decor-text-height: 95.7px;
-  --header-title-decor-padding: 66px;
+  --decor-text-height: 96px;
+  --rec-bulb-display: flex;
+  --title-decor-height: 117px;
+  --theme-menu-padding: 75px;
   --main-gap: 50px;
-  --main-inline-padding: 10px;
-  --section-gap: 10px;
-  --footer-block-size: 668px;
+  --section-columns: 1fr;
   /* colors */
   --page-bg-color: rgba(0, 0, 40, 1);
   --accent-color: rgba(255, 0, 112, 1);
   --decor-color: var(--accent-color);
-  --button-hover-color: rgba(255, 0, 112, 0.4);
   --decor-text-color: rgba(219, 0, 255, 1);
-  --main-text-color: rgba(241, 178, 206, 1);
+  --title-decor-color: rgba(0, 0, 40, 1);
+  --content-text-color: rgba(241, 178, 206, 1);
+  --decor-hover-color: rgba(255, 0, 112, 0.4);
 }
 
 @media (width >= 768px) {
   .page {
     --page-size: 768px;
     --page-gap: 60px;
-    --decor-text-height: 99px;
-  }
-
-  .header {
     --header-padding: 20px;
-    --header-gap: 434px 0;
-    --theme-menu-padding: 192px;
-    --header-decor-text-left: 0;
-    --header-title-decor-padding: 183px;
-    --grid-columns: 1fr 1fr;
+    --header-min-height: 1024px;
+    --theme-menu-margin: 172px 0 434px;
+    --header-title-column: 2/3;
+    --header-title-margin: 183px;
     --decor-text-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-
-  .header__theme-menu {
-    grid-column: 2;
-  }
-
-  .header .title-decor {
-    grid-column: 2;
-  }
-
-  .main {
+    --decor-text-height: 99px;
     --main-gap: 80px;
-    --main-inline-padding: 20px;
+    --section-columns: repeat(3, 1fr);
+    --header-height: 1024px;   
   }
 
-  .section {
-    --grid-columns: repeat(3, 1fr);
-  }
-
-  .focus-challenge .section__title {
-    grid-column: 1/2;
+  .header .decor-text-container {
+    --header-padding: 0;
   }
 
   .focus-challenge .section__content {
@@ -70,36 +57,13 @@
     margin-left: 5px;
   }
 
-  .section-distraction-causes .section__title {
-    grid-column: 1/2;
-  }
-
   .section-distraction-causes .section__content {
     grid-column: 1/4;
   }
 
-  .improve-focus .section__title {
-    grid-column: 1/2;
-  }
-
-  .improve-focus .title-decor {
+  .section__content-container {
     grid-column: 2/4;
-    margin-left: 8px;
-    block-size: 23px;
-  }
-
-  .improve-focus .section__content-container .title-decor {
-    margin-left: 0;
-  }
-
-  .improve-focus .section__content-container {
-    grid-column: 2/4;
-    margin-top: -70px;
-    margin-left: 8px;
-  }
-
-  .visual-guide {
-    --section-gap: 20px;
+    margin-left: 5px;
   }
 
   .visual-guide .title-decor {
@@ -111,7 +75,7 @@
   }
 
   .ice-cream {
-    grid-column: 3/4;
+    grid-column: 3;
     grid-row: 2/4;
   }
 
@@ -120,51 +84,26 @@
     grid-row: 2 span;
   }
 
-  .books {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
-
   .street {
     grid-column: 2/4;
-  }
-
-  .footer {
-    --header-padding: 20px;
-    --footer-block-size: 1024px;
-    --decor-text-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
 @media (width >= 1024px) {
   .page {
     --page-size: 1024px;
+    --header-min-height: 768px;
+    --theme-menu-margin: 0 0 517px;
+    --theme-menu-direc: row;
+    --theme-menu-self: center;
+    --title-decor-height: 71px;
+    --header-height: 768px;
     --decor-text-height: 130px;
   }
 
-  .header {
-    --header-gap: 517px 0;
-    --theme-menu-padding: 20px;
-    --header-title-decor-padding: 134px;
-    --grid-columns: 1fr 1fr;
-  }
-
-  .header__theme-menu {
-    --theme-justify: center;
-    grid-column: 1/3;
-  }
-
-  .header__theme-menu-list {
-    --theme-menu-dir: row;
-  }
-
+  .section__content-container,
   .focus-challenge .section__content {
     margin-left: 0;
-  }
-
-  .section-distraction-causes .section__title {
-    grid-column: 1/2;
-    grid-row: 1/2;
   }
 
   .section-distraction-causes .section__content:nth-child(2) {
@@ -177,19 +116,5 @@
 
   .section-distraction-causes .section__content:nth-child(4) {
     grid-column: 3/4;
-  }
-
-  .improve-focus .title-decor {
-    margin-left: 0;
-  }
-
-  .improve-focus .section__content-container {
-    margin-top: -48px;
-    margin-left: 0;
-  }
-
-  .footer {
-    --header-padding: 20px;
-    --footer-block-size: 768px;
   }
 }
