@@ -233,6 +233,10 @@
   align-self: start;
 }
 
+.improve-focus h4 {
+  font-weight: 400;
+}
+
 .visual-guide {
   grid-template-columns: var(--visual-guide-columns);
   gap: var(--page-padding);
