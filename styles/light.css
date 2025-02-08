@@ -10,7 +10,8 @@
   --button-hover-color: rgba(50, 49, 45, 0.4);
   --main-text-color: rgba(53, 52, 48, 1);
   --rec-bulb-display: none;
-  --page-bg-image: url('/images/cover-image-light.png');
+  --decor-title-color: rgba(53, 52, 48, 1);
+  --page-bg-image: url("../images/cover-image-light.png");
   --page-bg-color: rgba(255, 241, 247, 1);
   --decor-text-color: rgba(255, 194, 230, 1);
 }
@@ -22,7 +23,7 @@
     --button-hover-color: rgba(50, 49, 45, 0.4);
     --main-text-color: rgba(53, 52, 48, 1);
     --rec-bulb-display: none;
-    --page-bg-image: url('/images/cover-image-light.png');
+    --page-bg-image: url("../images/cover-image-light.png");
     --page-bg-color: rgba(255, 241, 247, 1);
     --decor-text-color: rgba(255, 194, 230, 1);
   }
