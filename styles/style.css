@@ -1,7 +1,3 @@
-/* * {
-  outline: 1px solid white;
-} */
-
 .page {
   inline-size: var(--page-size);
   background-image: var(--page-bg-image);
@@ -229,6 +225,11 @@
 
 .section-distraction-causes .section__content-container {
   grid-column: 1/3;
+}
+
+.section-distraction-causes .section__content {
+  inline-size: var(--content-inline-size);
+  margin-top: var(--content-margin-top);
 }
 
 .section-distraction-causes .section__content-container .section__content {
