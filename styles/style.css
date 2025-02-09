@@ -4,7 +4,6 @@
 
 .page {
   inline-size: var(--page-size);
-  padding: var(--page-padding);
   background-image: var(--page-bg-image);
   background-color: var(--page-bg-color);
   background-attachment: fixed;
@@ -16,13 +15,15 @@
   line-height: 23.4px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: calc(var(--page-gap) + var(--page-padding));
+  gap: var(--page-gap);
 }
 
 .header {
+  box-sizing: border-box;
   inline-size: 100%;
   block-size: 100vh;
-  min-block-size: calc(var(--min-block-size) - (var(--page-padding) * 2));
+  min-block-size: var(--min-block-size);
+  padding: var(--page-padding);
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -34,8 +35,8 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  right: 0;
-  top: 0;
+  right: var(--page-padding);
+  top: var(--page-padding);
   block-size: 25px;
   inline-size: 25px;
   border-inline-end: 1px solid var(--decor-color);
@@ -45,8 +46,8 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: var(--page-padding);
+  bottom: var(--page-padding);
   block-size: 25px;
   inline-size: 25px;
   border-inline-start: 1px solid var(--decor-color);
@@ -55,8 +56,8 @@
 
 .rec-bulb {
   position: absolute;
-  right: 9px;
-  top: 0;
+  right: calc(9px + var(--page-padding));
+  top: var(--page-padding);
   block-size: 26px;
   inline-size: 52px;
   display: var(--rec-bulb-display);
@@ -104,7 +105,7 @@
 }
 
 .header__theme-menu-item:hover {
-  outline: 1px solid var(--button-hover-color);
+  border: 1px solid var(--button-hover-color);
 }
 
 .header__theme-menu-item:has(:focus-visible) {
@@ -170,6 +171,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--main-gap);
+  padding-inline: var(--page-padding);
 }
 
 .section {
@@ -190,6 +192,7 @@
 
 .section__content-text {
   color: var(--main-text-color);
+  letter-spacing: -0.02px;
 }
 
 .decor-link {
@@ -272,6 +275,6 @@
 
 .footer {
   inline-size: 100%;
-  min-block-size: calc(var(--min-block-size) - (var(--page-padding) * 2));
+  min-block-size: var(--min-block-size);
   block-size: 100vh;
 }
