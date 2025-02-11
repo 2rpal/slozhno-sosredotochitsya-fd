@@ -55,7 +55,7 @@
   right: calc(9px + var(--padding));
   block-size: 26px;
   inline-size: 52px;
-  display: flex;
+  display: var(--rec-bulb-display);
   justify-content: space-between;
   align-items: center;
 }
@@ -186,7 +186,7 @@
 
 .decor-link {
   text-decoration: none;
-  text-shadow: 1px 1px var(--accent-color);
+  text-shadow: 2px 2px var(--accent-color);
 }
 
 .decor-link:hover {
@@ -199,7 +199,7 @@
 }
 
 .decor-link:focus-visible {
-  border: 1px solid var(--main-text-color);
+  outline: 1px solid var(--main-text-color);
 }
 
 .section-distraction-causes .title-decor {
